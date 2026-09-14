@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "REFERENCE-001",
+      "observable_id": "replace-with-exact-observable-id",
+      "unit_id": "replace-with-exact-unit-id"
+    }
+  ]
+}

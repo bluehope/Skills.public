@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "transfer_id": "KHW-YYYYMMDD-001",
+  "signature": "tool-or-domain:stable-preventable-mechanism",
+  "source_incident_ids": [],
+  "target_skill": "skill-name",
+  "target_artifact": "/absolute/path/to/installed/or-canonical/artifact",
+  "target_sha256": "",
+  "verified_artifacts": [
+    {
+      "role": "canonical|runtime|canonical-and-runtime",
+      "path": "/absolute/path/to/artifact",
+      "sha256": ""
+    }
+  ],
+  "change_type": "RULE|REFERENCE|SCRIPT|TEST|COMBINED",
+  "existing_helper_decision": "REUSE|PATCH|EXTEND|NEW",
+  "minimal_delta": "",
+  "validation_commands": [],
+  "validation_status": "PENDING|PASS|FAIL",
+  "activation_status": "PENDING|VERIFIED|NOT-APPLICABLE",
+  "approved_by": "",
+  "completed_at_utc": "",
+  "scope": "",
+  "non_goals": []
+}

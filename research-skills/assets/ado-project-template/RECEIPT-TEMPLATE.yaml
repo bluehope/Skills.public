@@ -1,0 +1,40 @@
+receipt_version: 1
+recorded_at_utc: null
+purpose: null
+mode: null
+
+ado:
+  project: null
+  context_name: null
+  core_version: null
+  plugins: []
+  resource_ids:
+    operation: null
+    discovery_space: null
+    sample_store: null
+
+execution:
+  command: null
+  scheduler_job_id: null
+  exit_state: null
+
+condition_fingerprint:
+  code_commit: null
+  experiment_implementation_hash: null
+  config_hash: null
+  input_artifact_hashes: []
+  environment: null
+  seed_policy: null
+  split: null
+  metric_identity: null
+  tolerance: null
+  evidence_cutoff: null
+
+result:
+  origin: null  # DIRECT | REUSED-EXACT | MATCHED | EXTERNAL
+  artifact_paths: []
+  artifact_hashes: []
+  operational_status: null
+  scientific_status: null
+  acceptance_gate: null
+  limitations: []

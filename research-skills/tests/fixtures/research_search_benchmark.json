@@ -1,0 +1,31 @@
+{
+  "description": "Known-answer retrieval checks for core research-skills contracts",
+  "version": 1,
+  "collection": "research-skills",
+  "queries": [
+    {
+      "id": "recover-before-recompute",
+      "query": "Recover Before Recompute",
+      "type": "exact",
+      "description": "Locate the rule requiring accepted artifact recovery before duplicate computation.",
+      "expected_files": ["SKILL.md"],
+      "expected_in_top_k": 1
+    },
+    {
+      "id": "contradiction-classification",
+      "query": "classify disagreement between chat prose code and immutable artifacts",
+      "type": "semantic",
+      "description": "Locate the research contradiction reconciliation contract.",
+      "expected_files": ["references/local-search.md", "references/provenance-and-identity.md"],
+      "expected_in_top_k": 1
+    },
+    {
+      "id": "condition-fingerprint",
+      "query": "condition fingerprint source checkpoint split metric",
+      "type": "topical",
+      "description": "Locate contracts governing equivalence and reuse conditions.",
+      "expected_files": ["SKILL.md", "references/structured-experiment-campaigns.md"],
+      "expected_in_top_k": 1
+    }
+  ]
+}

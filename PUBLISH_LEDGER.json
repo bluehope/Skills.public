@@ -1,0 +1,38 @@
+{
+  "published": "2026-09-14T21:09:25",
+  "v2_commit": "b62e969f0269ea6a1ef6d864eae188a944d2abc0",
+  "skills": {
+    "llm-handover-skills": {
+      "v2_source": "skills/infra/llm-handover-skills",
+      "v2_tree_sha256": "033c45c5dfc7cb04d814c104701b43d126699f5c78a4b74d84166ef654d940a0"
+    },
+    "research-skills": {
+      "v2_source": "skills/research/research-skills",
+      "v2_tree_sha256": "3bdbcd166178017a1668418dc5076c8121a99a1aa76b56154bec64c20ff79b8b"
+    },
+    "local-search": {
+      "v2_source": "skills/infra/local-search",
+      "v2_tree_sha256": "4e95005d3e2d65c5e9831055d96ddf3392013915db8370171786543007cc217f"
+    },
+    "scientific-figure-making": {
+      "v2_source": "skills/figures/scientific-figure-making",
+      "v2_tree_sha256": "4b295d343b8cb2ab64b0cb352af1b759d38414da5518376c252fc83c9e3e9606"
+    },
+    "figures4papers-style": {
+      "v2_source": "skills/figures/figures4papers-style",
+      "v2_tree_sha256": "54e0fdd8d5900274a3690a492fbc0745a18b8de8f97c564e9f9e37ff34a5c50c"
+    },
+    "atom-visualize": {
+      "v2_source": "skills/figures/atom-visualize",
+      "v2_tree_sha256": "7bd9a676fc663242b74090e392e1f5b137be34b9b6177fd503017538296f2ff9"
+    },
+    "atom-trajectory-visualize": {
+      "v2_source": "skills/figures/atom-trajectory-visualize",
+      "v2_tree_sha256": "125173543e5580fd153133bf5f0716b92e9756d2cee7344ac5c8b7938ad6e69f"
+    },
+    "_tests/figures": {
+      "v2_source": "skills/figures/tests",
+      "v2_tree_sha256": "a71266793534f81f5a8390fe39c3ec1db29eb9b16a9af103f49c6dd98321e22d"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "LLM Handover"
+  short_description: "Coordinate Codex and Claude handoffs"
+  default_prompt: "Use $llm-handover-skills to coordinate isolated Codex and Claude Code work with frozen contracts and receipts."
+
+policy:
+  allow_implicit_invocation: true

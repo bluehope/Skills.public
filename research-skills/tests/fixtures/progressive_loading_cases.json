@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "evaluation_status": "STATIC-ONLY; model behavior not executed",
+  "cases": [
+    {
+      "id": "known-id-read",
+      "request": "Show the evidence locator for U-1; do not change anything.",
+      "instruction_files": ["SKILL.md"],
+      "additional_skill_ids": [],
+      "expected_behavior": "Use show U-1 directly, then the needed evidence; no mandatory status, broad search or registration."
+    },
+    {
+      "id": "unmanaged-analysis",
+      "request": "This project has no registries. Explain the supplied result without modifying files.",
+      "instruction_files": ["SKILL.md"],
+      "additional_skill_ids": [],
+      "expected_behavior": "Inspect the named result; no adoption, intake, fixes or new schema."
+    },
+    {
+      "id": "record-plan",
+      "request": "Save this approved research plan in the managed project, linked to U-1.",
+      "instruction_files": ["SKILL.md", "references/durable-records.md", "references/project-records-and-views.md"],
+      "additional_skill_ids": [],
+      "expected_behavior": "Use document with the existing project/ID; no scientific run, browser or optional index."
+    },
+    {
+      "id": "recover-error",
+      "request": "The authorized transfer failed with a known quoting error. Recover within scope and record the outcome.",
+      "instruction_files": ["SKILL.md", "references/operational-error-recording.md"],
+      "additional_skill_ids": ["ssh-skills"],
+      "expected_behavior": "Lookup the signature and evidence, use the existing transport helper, log/resolve the same incident; do not run the promotion review."
+    },
+    {
+      "id": "path-map",
+      "request": "Update the project's PATH_MAP from these verified runtime locators.",
+      "instruction_files": ["SKILL.md", "references/locator-map.md"],
+      "additional_skill_ids": [],
+      "expected_behavior": "Update the existing locator owner and links; do not turn paths into scientific results or start remote discovery."
+    },
+    {
+      "id": "result-admission",
+      "request": "Audit and register this result as evidence; check its scientific claim before acceptance.",
+      "instruction_files": ["SKILL.md", "references/scientific-gates.md", "references/evidence-and-validation.md", "references/registration-checklist.md", "references/durable-records.md", "references/project-records-and-views.md"],
+      "additional_skill_ids": [],
+      "expected_behavior": "Retain raw-first, same observable/reference, identity, matched controls, scientific gates and structural registration checks; registration alone is not acceptance."
+    },
+    {
+      "id": "broad-discovery",
+      "request": "Locate prior experiments across conflicting local report versions; report findings without writing.",
+      "instruction_files": ["SKILL.md", "references/local-search.md"],
+      "additional_skill_ids": ["local-search"],
+      "expected_behavior": "Use scoped candidate retrieval and canonical witnesses; no index/receipt/ledger writes without authority."
+    }
+  ]
+}

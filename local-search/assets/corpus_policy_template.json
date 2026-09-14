@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "project_root": ".",
+  "collection_name": "project-name",
+  "context": "Canonical project documents staged for local retrieval; search results are locators.",
+  "always_context": [
+    "README.md",
+    "STATE.md"
+  ],
+  "include": [
+    "planning/**/*.md",
+    "sources/**/*.md",
+    "docs/**/*.md"
+  ],
+  "exclude": [
+    "generated/**",
+    "**/generated/**",
+    "archive/**",
+    "**/archive/**",
+    "build/**",
+    "**/build/**",
+    "dist/**",
+    "**/dist/**",
+    "tmp/**",
+    "**/tmp/**",
+    "temp/**",
+    "**/temp/**",
+    "logs/**",
+    "**/logs/**",
+    "validation/tmp/**",
+    "**/__pycache__/**"
+  ],
+  "restricted": [
+    "personal data",
+    "credentials",
+    "hidden answers"
+  ],
+  "qmd": {
+    "recommended": true,
+    "required": false,
+    "index_location": "per-machine"
+  },
+  "tgrep": {
+    "recommended": false,
+    "required": false,
+    "index_location": "per-machine-outside-project",
+    "activate_when": [
+      "the same large codebase receives repeated regex searches",
+      "measured rg latency justifies persistent index cost"
+    ]
+  }
+}

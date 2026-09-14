@@ -1,0 +1,23 @@
+{
+  "incident_id": "OPS-YYYYMMDD-001",
+  "occurred_at_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "operation_kind": "terminal|ssh|scheduler|execution|copy|move|permission|archive|cleanup|monitor|parse|other",
+  "environment_scope": "project, host/profile, and bounded scope",
+  "action_ref": "redacted command receipt or canonical script path/hash",
+  "symptom_class": "short observable failure class",
+  "normalized_signature": "tool-or-domain:stable-preventable-mechanism",
+  "severity": "LOW|MEDIUM|HIGH|CRITICAL",
+  "impact": "bounded consequence without secrets",
+  "evidence_path": "bounded log or receipt path",
+  "immediate_fix": "what was tried; use none/unresolved if no fix was attempted",
+  "existing_helper_checked": "YES|NO|UNKNOWN",
+  "candidate_target_skill": "skill-name or project-local",
+  "status": "OBSERVED",
+  "transfer_id": "",
+  "redaction_status": "REDACTED|NO-SENSITIVE-DATA|REVIEW-REQUIRED",
+  "note": "",
+  "skills_used": {"skill-id": "installed version, sha256:<hash>, or unknown"},
+  "resolution_status": "UNRESOLVED",
+  "verification_ref": "",
+  "resolution_history": []
+}

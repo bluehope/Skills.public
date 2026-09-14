@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "PROJECT-ROLE-v1",
+  "status": "FROZEN-BEFORE-DISPATCH",
+  "coordinator": {"task_id": "coordinator", "canonical_verdict_owner": true},
+  "contract": {"path": "relative/path/contract.json", "sha256": "64-lowercase-hex"},
+  "project_root": "/absolute/or/project-relative/root",
+  "shared_read_roots": ["docs/", "contracts/", "inputs/"],
+  "forbidden_read_roots": ["reports/workers/a/", "reports/workers/b/"],
+  "write_policy": "worker namespace only; canonical project files are read-only",
+  "inputs": [{"path": "relative/path/input.csv", "sha256": "64-lowercase-hex"}],
+  "workers": [
+    {
+      "worker_id": "A",
+      "backend": "codex-task",
+      "implementation_namespace": "staging/worker_a/",
+      "result_namespace": "reports/workers/a/",
+      "expected_receipt": "reports/workers/a/receipt.json",
+      "expected_sidecar": "reports/workers/a/receipt.json.sha256",
+      "remote_namespace": null,
+      "sibling_reads": "FORBIDDEN"
+    },
+    {
+      "worker_id": "B",
+      "backend": "claude-code-cli",
+      "implementation_namespace": "staging/worker_b/",
+      "result_namespace": "reports/workers/b/",
+      "expected_receipt": "reports/workers/b/receipt.json",
+      "expected_sidecar": "reports/workers/b/receipt.json.sha256",
+      "remote_namespace": null,
+      "sibling_reads": "FORBIDDEN"
+    }
+  ],
+  "comparison": {"exact_fields": [], "per_field_tolerances": {}, "blanket_tolerance": "FORBIDDEN"},
+  "claim_ceiling": "DIAGNOSTIC-ONLY",
+  "forbidden_actions": ["shared contract mutation", "sibling namespace read", "canonical verdict by worker", "unregistered compute submission"]
+}

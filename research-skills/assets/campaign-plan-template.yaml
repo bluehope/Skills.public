@@ -1,0 +1,38 @@
+schema_version: 1
+
+campaign:
+  id: null
+  lane: EXPLORATORY  # EXPLORATORY | CONFIRMATORY | PROMOTION
+  research_question_id: null
+  experiment_contract_path: null
+  experiment_contract_hash: null
+
+candidate_space:
+  dimensions: []
+  exclusions: []
+  required_controls: []
+  expected_point_count: null
+
+selection_policy:
+  id: null
+  version: null
+  rationale: null
+  stopping_rule: null
+  outcome_to_next_action: []
+
+execution:
+  backend: null
+  profile_or_partition: null
+  packetization: null
+  dependencies: []
+  immutable_artifact_root: null
+  failure_preservation_path: null
+
+gates:
+  preflight_artifact: null
+  launch_gate: null
+  acceptance_gate: null
+  claim_ceiling: null
+
+resolved_plan_receipt: null
+coverage_ledger: null

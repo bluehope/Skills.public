@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "canonical_documents": {},
+  "current_documents": [],
+  "historical_boundaries": {},
+  "status_contracts": [],
+  "ambiguous_terms": [],
+  "link_documents": [],
+  "search_receipts": [],
+  "required_search_receipt_columns": [],
+  "stable_id_registry": null,
+  "registration_receipts": [],
+  "registration_profiles": {}
+}

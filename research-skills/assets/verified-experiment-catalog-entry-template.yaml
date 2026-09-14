@@ -1,0 +1,48 @@
+catalog_schema_version: 1
+
+entry:
+  id: null
+  version: null
+  status: CATALOG-CANDIDATE  # CATALOG-CANDIDATE | CATALOGED | DEPRECATED | INVALIDATED
+  owner: null
+  approved_at_utc: null
+
+contract:
+  canonical_path: null
+  sha256: null
+  input_domains: []
+  observed_properties: []
+  claim_ceiling: null
+  permitted_non_claims: []
+
+implementation:
+  repository: null
+  code_commit: null
+  path: null
+  content_hash: null
+  environment_or_container: null
+  dependency_lock_hash: null
+
+reproduction:
+  status: null  # must be REPRODUCTION-PASS before CATALOGED
+  clean_environment_receipt: null
+  reproduction_command: null
+  known_answer_anchors: []
+  tolerance: null
+  seed_and_replica_evidence: null
+  accepted_reference_artifacts: []
+
+registration:
+  checklist_contract: references/registration-checklist.md
+  checklist_receipt: null
+
+scope:
+  validated_domains: []
+  known_limitations: []
+  failure_semantics: []
+
+lifecycle:
+  predecessor: null
+  successor: null
+  deprecation_or_invalidation_evidence: null
+  revisit_conditions: []

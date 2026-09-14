@@ -1,0 +1,35 @@
+# ado Workspace
+
+Status: ACTIVE
+Mode: {{MODE}}
+ado project: {{ADO_PROJECT}}
+Context name: {{CONTEXT_NAME_DISPLAY}}
+Initialized: {{CREATED_AT_UTC}}
+
+This directory manages the project's optional ado integration. ado is a
+structured experiment registry and query layer; it is not the scientific
+authority for claims or accepted numbers.
+
+## Authority
+
+- Scientific contract and gates: project `DESIGN-SSOT` or equivalent.
+- Current research state: project `STATE.md` or equivalent.
+- Attempts and decisions: project `EXPERIMENT-LEDGER` or equivalent.
+- Raw results and accepted metrics: immutable evidence artifacts.
+- ado resources and measurements: operational index and derived query view.
+
+An ado operation marked `success` is not scientifically accepted until the
+project's explicit gate passes. Do not cite `latest` as evidence.
+
+## Contents
+
+- `ado-project.yaml`: secret-free integration and reuse policy.
+- `configs/`: reviewed actuator, operation, Sample Store, and Discovery Space
+  YAML files.
+- `imports/`: source manifests and mappings for imported/replayed results.
+- `exports/`: timestamped recovery exports and checksums.
+- `receipts/`: command, version, ID, fingerprint, origin, and artifact records.
+
+Keep context credentials, live SQLite databases, caches, and large raw
+artifacts outside this directory. Link hash-bound canonical artifacts from
+receipts instead of copying them here.

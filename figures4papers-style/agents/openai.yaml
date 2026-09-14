@@ -1,0 +1,5 @@
+interface:
+  display_name: "Figures4Papers Style"
+  short_description: "Experimental publication-style Matplotlib adapter"
+  default_prompt: "Use $figures4papers-style to create a publication-ready Matplotlib figure without changing its scientific data contract or copying unlicensed upstream code."
+

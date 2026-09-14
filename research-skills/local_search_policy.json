@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "project_root": ".",
+  "collection_name": "research-skills",
+  "context": "Canonical research-skills contracts and templates; search hits are locators and must be reopened at their source paths.",
+  "always_context": [
+    "SKILL.md"
+  ],
+  "include": [
+    "SKILL.md",
+    "references/**/*.md",
+    "assets/**/*.md"
+  ],
+  "exclude": [
+    ".git/**",
+    "**/__pycache__/**",
+    "**/.cache/**",
+    "**/generated/**",
+    "**/archive/**",
+    "**/tmp/**",
+    "**/logs/**"
+  ],
+  "restricted": [
+    "credentials and secrets",
+    "personal data",
+    "answer keys and hidden evaluation truth"
+  ],
+  "qmd": {
+    "recommended": true,
+    "required": false,
+    "index_location": "per-machine",
+    "index_name": "research-skills",
+    "activate_when": [
+      "recovering a prior research rule or evidence contract",
+      "comparing overlapping workflow definitions",
+      "cross-language or semantic retrieval matters"
+    ]
+  },
+  "review_required": true
+}

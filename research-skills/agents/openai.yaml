@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Workflow"
+  short_description: "Evidence-grounded research and operational learning"
+  default_prompt: "Use $research-skills to organize evidence, treat applicable project-local skills as first-class owners, consult the capability-to-code map before writing a helper, prefer conda codex for bundled Python tools, and transfer recurring operational lessons with validated receipts. For multiple candidate portfolios, use the Portfolio Gate Matrix (PGM) mode with candidates as rows and evidence gates in left-to-right order. Graphify is experimental navigation only: use it to locate relationships, then verify every adopted claim against canonical files and evidence gates."

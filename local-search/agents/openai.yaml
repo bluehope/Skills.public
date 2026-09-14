@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Search"
+  short_description: "Search local evidence and extract grounded fields"
+  default_prompt: "Use $local-search to find and verify local evidence with the cheapest reliable tier; use indexed tgrep only when repeated large-codebase regex searches justify it."

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Atom Trajectory Visualization"
+  short_description: "Render reproducible atomistic frames and movies"
+  default_prompt: "Use $atom-trajectory-visualize to render this trajectory with fixed provenance, camera, colors, frame selection, and qualitative-claim boundaries."
+

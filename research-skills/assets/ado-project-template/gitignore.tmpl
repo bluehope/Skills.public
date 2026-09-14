@@ -1,0 +1,16 @@
+# Live databases and their journals belong outside the project tree.
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Contexts may contain database credentials.
+contexts/
+secrets/
+*context*.yaml
+*context*.yml
+
+# Regenerable local state.
+cache/
+tmp/
+__pycache__/

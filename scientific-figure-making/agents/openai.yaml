@@ -1,0 +1,5 @@
+interface:
+  display_name: "Scientific Figure Making"
+  short_description: "Route and validate reproducible scientific visuals"
+  default_prompt: "Use $scientific-figure-making to route this visual to the narrowest figure skill and preserve its data, provenance, runtime, and release checks."
+

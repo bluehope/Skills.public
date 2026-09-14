@@ -1,0 +1,71 @@
+schema_version: 1
+
+experiment:
+  id: null
+  version: null
+  status: DRAFT  # DRAFT | LOCKED | SUPERSEDED
+  research_question_id: null
+  claim_ceiling: null
+
+implementation:
+  path: null
+  code_repository: null
+  code_commit: null
+  content_hash: null
+  environment_or_container: null
+
+inputs:
+  required: []
+  optional: []
+  # Each item records name, type, scientific role, domain, units, and source.
+  # Optional items also record their default.
+
+outputs:
+  - target_property: null
+    observed_property: null
+    units: null
+    aggregation: null
+    metric_definition: null
+    mask: null
+    split: null
+    metric_role: null  # PRIMARY-PROMOTION | MECHANISM-DIAGNOSTIC | GUARDRAIL | SANITY-CONTROL
+
+behavior:
+  stochastic: null
+  seed_policy: null
+  replica_policy: null
+  deterministic_flags: []
+  tolerance: null
+
+validity:
+  preconditions: []
+  known_answer_anchors: []
+  failure_semantics: []
+  limitations: []
+  permitted_non_claims: []
+
+decision_semantics:
+  branch_specific_falsifier: null
+  failure_blocks: []
+  failure_does_not_imply: []
+  informative_failure_triggers: []
+  bounded_continuation:
+    allowed: null
+    max_additional_points: null
+    independent_validation_required: null
+  verdict_vector:
+    mechanism: null
+    promotion: null
+    branch_disposition: null
+    closure_basis: null
+    closure_scope: null
+    closure_argument_path: null
+    failed_gate_id: null
+    surviving_claim: null
+    revisit_trigger: null
+
+lineage:
+  predecessor_contract: null
+  canonical_design_ssot: null
+  created_at_utc: null
+  owner: null

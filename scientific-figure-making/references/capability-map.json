@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "umbrella": "scientific-figure-making",
+  "capabilities": [
+    {"id": "publication-style", "skill": "figures4papers-style", "canonical": "../figures4papers-style/SKILL.md", "installed": "figures4papers-style/SKILL.md", "maturity": "EXPERIMENTAL", "runtime_profile": "publication"},
+    {"id": "atomic-structure", "skill": "atom-visualize", "canonical": "../atom-visualize/SKILL.md", "installed": "atom-visualize/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "core"},
+    {"id": "atomic-trajectory", "skill": "atom-trajectory-visualize", "canonical": "../atom-trajectory-visualize/SKILL.md", "installed": "atom-trajectory-visualize/SKILL.md", "maturity": "EXPERIMENTAL", "runtime_profile": "trajectory"},
+    {"id": "select-source", "skill": "select-figure-evidence", "canonical": "../select-figure-evidence/SKILL.md", "installed": "select-figure-evidence/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "core"},
+    {"id": "extract-source", "skill": "extract-source-figures", "canonical": "../extract-source-figures/SKILL.md", "installed": "extract-source-figures/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "core"},
+    {"id": "crop-panel", "skill": "crop-figure-panels", "canonical": "../crop-figure-panels/SKILL.md", "installed": "crop-figure-panels/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "core"},
+    {"id": "qa-assets", "skill": "qa-figure-assets", "canonical": "../qa-figure-assets/SKILL.md", "installed": "qa-figure-assets/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "core"},
+    {"id": "generate-lecture", "skill": "generate-lecture-figures", "canonical": "../generate-lecture-figures/SKILL.md", "installed": "generate-lecture-figures/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "publication"},
+    {"id": "physics-exam", "skill": "edit-phys-exam-figures", "canonical": "../../exam/edit-phys-exam-figures/SKILL.md", "installed": "edit-phys-exam-figures/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "specialist"},
+    {"id": "research-evidence", "skill": "research-skills", "canonical": "../../research/research-skills/SKILL.md", "installed": "research-skills/SKILL.md", "maturity": "ACTIVE", "runtime_profile": "core"}
+  ]
+}

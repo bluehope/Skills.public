@@ -1,0 +1,4 @@
+interface:
+  display_name: "Atom Visualization"
+  short_description: "Render atoms and spins across major viewers"
+  default_prompt: "Use $atom-visualize to reuse a verified renderer workflow and produce a provenance-preserving atomic-structure visualization."

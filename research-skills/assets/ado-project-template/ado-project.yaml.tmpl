@@ -1,0 +1,42 @@
+schema_version: 1
+status: active
+initialized_at_utc: {{CREATED_AT_UTC_YAML}}
+mode: {{MODE_YAML}}
+
+ado:
+  project: {{ADO_PROJECT_YAML}}
+  context_name: {{CONTEXT_NAME_YAML}}
+  core_version: unknown
+  plugins: []
+
+storage:
+  recommended_backend: {{RECOMMENDED_BACKEND_YAML}}
+  live_database_location: external-to-project
+  credentials_location: external-secret-store-or-local-context
+  sample_store_identifier: default
+  last_verified_backup: null
+  last_verified_export: null
+
+authority:
+  state_document: null
+  design_ssot: null
+  experiment_ledger: null
+  immutable_artifact_root: null
+  ado_role: operational-registry-and-query-view
+  scientific_acceptance_owner: external-project-gates
+
+reuse:
+  memoization_default: disabled
+  exact_fingerprint_required: true
+  allowed_origins_for_confirmatory_gate:
+    - DIRECT
+    - REUSED-EXACT
+    - EXTERNAL
+  external_requires_source_validation: true
+  locator_only_origins:
+    - MATCHED
+
+handoff:
+  owner: null
+  last_verified_at_utc: null
+  next_gate: null

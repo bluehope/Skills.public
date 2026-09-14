@@ -1,0 +1,1 @@
+incident_id	occurred_at_utc	operation_kind	environment_scope	action_ref	symptom_class	normalized_signature	severity	impact	evidence_path	immediate_fix	existing_helper_checked	candidate_target_skill	status	transfer_id	redaction_status	note	skills_used	resolution_status	verification_ref	resolution_history

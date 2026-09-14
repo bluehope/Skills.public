@@ -1,0 +1,46 @@
+schema_version: 1
+
+identity:
+  campaign_id: null
+  generated_at_utc: null
+  plan_path: null
+  plan_hash: null
+  experiment_contract_path: null
+  experiment_contract_hash: null
+
+resolved_space:
+  point_manifest_path: null
+  point_manifest_hash: null
+  total_points: null
+  replicas: null
+  origin_counts:
+    DIRECT: 0
+    REUSED-EXACT: 0
+    MATCHED: 0
+    EXTERNAL: 0
+  blocked_points: 0
+  invalid_points: 0
+  to_run_points: null
+
+cost_estimate:
+  cpu_hours: null
+  gpu_hours: null
+  peak_memory: null
+  walltime: null
+  storage: null
+  basis: null
+
+execution:
+  backend: null
+  dependencies_with_hashes: []
+  packetization: null
+  output_namespaces: []
+  failure_preservation_path: null
+
+preflight:
+  status: PARTIAL  # PARTIAL | BLOCKED | READY | REJECTED
+  checks: []
+  unresolved_assumptions: []
+  stop_conditions: []
+  verified_at_utc: null
+  verifier: null
